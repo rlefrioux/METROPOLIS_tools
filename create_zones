@@ -5,9 +5,9 @@ import geopandas as gpd
  ## INPUTS ##
  ############
  
-zone_shapefile_path = "D:/.../.shp"
-OD_matrix = "D:/.../.csv"
-output_path = "D:/.../zones.csv"
+zone_shapefile_path = ".../.shp"
+OD_matrix = ".../.csv"
+output_path = ".../zones.csv"
 
 ############
 ## SCRIPT ##
