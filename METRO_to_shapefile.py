@@ -6,9 +6,9 @@ from shapely.geometry.polygon import LineString
 ## INPUTS ##
 ############
 
-intersections_path = "D:/.../.csv"
-links_path = "D:/.../.csv
-output_path = "D:/.../network.shp"
+intersections_path = ".../.csv"
+links_path = ".../.csv"
+output_path = ".../network.shp"
 
 ############
 ## SCRIPT ##
