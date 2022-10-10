@@ -8,11 +8,17 @@ More information on the methodologies used by those script could be find in the 
 
 ## create_zones.py
 
-This script allows its users to create create zones file that could be used in a METROPOLIS' simulation.
+This script allows its users to create create zones centroid csv file that could be used in a METROPOLIS' simulation. Notice that in order to run this script you should download before a shapefile (.shp) of all the zones.  
+
+It takes the following inputs, with the following default values, those can be modified in the inputs section of the script:
+
+  - zone_shapefile_path : The path to the shapefile of the zone
+  - OD_matrix : The path to the OD matrix csv file
+  - output_path : The path to the outputs files. The default name of the ouputs file is zones.csv
 
 ## create_connectors.py 
 
-This script allows its users to create create connectors that could be used in a METROPOLIS' simulation. 
+This script allows its users to create connectors csv file that could be used in a METROPOLIS' simulation. 
 
 It takes the following inputs, with the following default values, those can be modified in the inputs section of the script:
 
