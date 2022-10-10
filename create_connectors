@@ -73,8 +73,8 @@ zones_path = "D:/.../.csv"
 links_path = "D:/.../.csv"
 output_path = "D:/.../links_connectors.csv"
 
-max_speed_connection = 130
-min_capacity_connection = 1000
+max_speed_connection = 129
+min_capacity_connection = 1001
 among_closest = 15
 connectors_parameters = {"function" : 1,
                          "lanes" : 5,
