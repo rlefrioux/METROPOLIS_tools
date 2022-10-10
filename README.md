@@ -14,7 +14,7 @@ It takes the following inputs, with the following default values, those can be m
 
   - zone_shapefile_path : The path to the shapefile of the zone
   - OD_matrix : The path to the OD matrix csv file
-  - output_path : The path to the outputs files. The default name of the ouputs file is zones.csv
+  - output_path = ".../zones.csv" : The path to the outputs csv file
 
 ## create_connectors.py 
 
@@ -22,12 +22,12 @@ This script allows its users to create connectors csv file that could be used in
 
 It takes the following inputs, with the following default values, those can be modified in the inputs section of the script:
 
-  - intersections_path : The path to the csv intersections file produced with the OpenStreetMaps script 
+  - intersections_path : The path to the intersections csv file produced with the OpenStreetMaps script 
   - zones_path : The path to the zones csv file produced with the create_zones.py script 
   - links_path : The path to the links csv file produced with the OpenStreetMaps script
-  - output_path : The path to the outputs files. The default name of the ouputs file is links_connectors.csv
+  - output_path = ".../links_connectors.csv" : The path to the outputs csv file.
   - max_speed_connection = 129 : It is the maximum of links to which connectors can be connected
-  - min_capacity_connection = 1000 : It is the minimum capacity of links to which the connectors can be connected
+  - min_capacity_connection = 1001 : It is the minimum capacity of links to which the connectors can be connected
   - among_closest = 15 : It is the number of closest intersection to which the connectors can be created
   - connectors_parameters = {"function" : 1, "lanes" : 5, "speed" : 200, "capacity" : 99999} : It is the general parameters for the connectors
     - function = 1 : It is the congestion function default value is set to FreeFlow
@@ -36,3 +36,14 @@ It takes the following inputs, with the following default values, those can be m
     - capacity = 99999 : is the capacity of each lane for each connector
     
     Notice that those default values are set in order to do not create any congestion
+    
+## create_connectors.py 
+
+This script allows its users to create connectors csv file that could be used in a METROPOLIS' simulation. 
+
+It takes the following inputs, with the following default values, those can be modified in the inputs section of the script:
+
+  - intersections_path : The path to the intersections csv file
+  - links_path : The path to the links csv file
+  - output_path = ".../network.shp" : The path to the outputs shapefile.
+    
