@@ -89,9 +89,10 @@ connectors_parameters = {"function" : 1,
 print("Loading and preparing files...")
 
 #Load files
-df_intersections = pd.read_csv("D:/Projet_EISTI/Population_movement/inputs/reunion/intersections.csv")
-df_zones = pd.read_csv("D:/Projet_EISTI/Population_movement/inputs/reunion/zones.csv")
-df_links = pd.read_csv("D:/Projet_EISTI/Population_movement/inputs/reunion/links.csv")
+df_intersections = pd.read_csv(intersections_path)
+df_zones = pd.read_csv(zones_path)
+df_links = pd.read_csv(links_path)
+
 
 #Restrict available link to those with:
 #- A capacity higher than min_capacity_connection    
