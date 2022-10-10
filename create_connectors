@@ -1,16 +1,6 @@
 import pandas as pd
 import numpy as np
 
-""" 
-This script is able to create automatically connectors
-for METROPOLIS using intersections capacities and distance to each zone. 
----------------
-df_intersections : path to METROPOLIS tsv file of intersections
-df_zones : path to METROPOLIS tsv file of zones
-df_links : path to METROPOLIS tsv file of links
----------------
-csv file of links augmented with connectors   
-"""
 
 #################
 ### FUNCTIONS ###
