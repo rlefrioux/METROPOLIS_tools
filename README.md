@@ -37,7 +37,7 @@ It takes the following inputs, with the following default values, those can be m
     
     Notice that those default values are set in order to do not create any congestion
     
-## create_connectors.py 
+## METRO_to_shapefile.py 
 
 This script allows its users to create connectors csv file that could be used in a METROPOLIS' simulation. 
 
