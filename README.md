@@ -45,5 +45,29 @@ It takes the following inputs, with the following default values, those can be m
 
   - intersections_path : The path to the intersections csv file
   - links_path : The path to the links csv file
-  - output_path = ".../network.shp" : The path to the outputs shapefile.
+  - output_path = ".../network.shp" : The path to the output shapefile.
+
+## rescale_OD_matrix.py
+
+This script allows its users to rescall and export in a csv file an OD matrix that could be used in a METROPOLIS' simulation. 
+
+It takes the following inputs, with the following default values, those can be modified in the inputs section of the script:
+
+  - zone_shapefile_path : The path to the shapefile of the zone
+  - path_OD_matrix : The path to the original OD matrix csv file
+  - output_path = ".../rescalled_OD_matrix.csv" : The path to the output csv file
+    
+    This file must includes for each zone 2 columns one with an identifier of the old zone and one identifier for the new zone
+
+  - population_tiff_path : The path to the tiff file of population count
+  - residential_tiff_path : The path to the tiff file of residential building density
+  - working_tiff_path : The path to the tiff file of working building density 
+  - road_tiff_path : The path to the tiff file of road length density
+  
+    This file has to be downloaded or produced using external sources (example: Qgis...) 
+
+  - diag_scaling_factor = 0 : This scalling factor is used to reduce the size of the population of the diagonal of the original OD matrix 
+  - column_name_old_zone : This is the name of the column in which the ID/name of the old zone are stored in the zone shapefile
+  - columns_name_new_zone : This is the name of the column in which the ID/name of the new zone are stored in the zone shapefile
+
     
