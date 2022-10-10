@@ -68,9 +68,9 @@ def geo_position(x_bari, y_bari, x, y):
 ###  INPUTS  ###
 ################
 
-intersections_path = "D:/..."
-zones_path = "D:/..."
-links_path = "D:/..."
+intersections_path = "D:/.../.csv"
+zones_path = "D:/.../.csv"
+links_path = "D:/.../.csv"
 output_path = "D:/.../links_connectors.csv"
 
 max_speed_connection = 130
